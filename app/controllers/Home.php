@@ -10,6 +10,7 @@ class Home extends Controller{
     
     public function index(){
         $data=$this->model_home->getAll();
+        echo '1';
     }
     public function getDetai($id){
 
