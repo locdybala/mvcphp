@@ -1,9 +1,9 @@
 <?php 
 $config['database']=[
-'host'=>'localhost',
-'user'=>'root',
-'password'=>'',
-'db'=>'mvc'
+'host'=>"localhost",
+'user'=>"root",
+'pass'=>"",
+'db'=>"mvc"
 
 ];
 ?>

@@ -1,6 +1,6 @@
 <?php 
 
-class HomeModel{
+class HomeModel {
     protected $table='';
 
     public function getAll(){

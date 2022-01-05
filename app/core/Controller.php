@@ -16,7 +16,6 @@ class Controller{
         extract($data);
         if(file_exists('./app/views/'.$view.'.php')){
             require './app/views/'.$view.'.php';
-
         }
     }
 }

@@ -3,9 +3,10 @@ class Connection{
     private static $instance=null,$conn=null;
     private function __construct($config)
     {
+        
+
         try{
             $dsn='mysql:dbname='.$config['db'].';host='.$config['host'];
-            
             $con=new PDO($dsn,$config['user']);
             self::$conn=$con;
         }
