@@ -27,9 +27,7 @@ class UserModel extends Model
     public function update($data,$id)
     {
         $sql = sprintf("UPDATE users SET first_name = '%s', last_name = '%s' WHERE id='%s'", $data['first_name'], $data['last_name'], $id);
-        echo "<pre>";
-            echo $sql;
-        echo "</pre>";
+        
         $result = $this->db->query($sql);
         return $result;
     }
