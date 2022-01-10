@@ -15,7 +15,7 @@
             Manager User
         </h2>
         <table class="table">
-            <a href="/mvc/user/create">Them</a>
+            <a href="/user/create">Them</a>
             <thead>
                 <tr>
                     <th>Id</th>
@@ -32,8 +32,8 @@
                         <td><?php echo $user['first_name']; ?></td>
                         <td><?php echo $user['last_name']; ?></td>
                         <td>
-                            <a href="/mvc/user/edit/<?php echo $user['id'] ?>">Edit</a>
-                            <a href="/mvc/user/destroy/<?php echo $user['id'] ?>" onclick="return confirm('Are you sure')">Delete</a>
+                            <a href="/user/edit/<?php echo $user['id'] ?>">Edit</a>
+                            <a href="/user/destroy/<?php echo $user['id'] ?>" onclick="return confirm('Are you sure')">Delete</a>
                         </td>
                     </tr>
                 <?php endforeach;

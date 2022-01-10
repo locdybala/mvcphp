@@ -29,7 +29,7 @@ class User extends Controller
         if (count($errors) === 0) {
             $isCreated = $this->model_user->create($_POST);
             if ($isCreated) {
-                header('location:/mvc/user/index');
+                header('location:/user/index');
             }
         }
     }
@@ -51,14 +51,14 @@ class User extends Controller
         if (count($errors) === 0) {
             $isCreated = $this->model_user->update($_POST, $id);
             if ($isCreated) {
-                header('location:/mvc/user/index');
+                header('location:/user/index');
             }
         }
     }
     public function destroy($id){
         $result=$this->model_user->destroy($id);
         if ($result) {
-            header('location:/mvc/user/index');
+            header('location:/user/index');
         }
     }
 }

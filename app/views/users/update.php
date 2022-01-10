@@ -9,7 +9,7 @@
 </head>
 <body>
     <div class=" container">
-    <form method="POST" action="/mvc/user/update/<?php echo $data['id']; ?>">
+    <form method="POST" action="/user/update/<?php echo $data['id']; ?>">
     <div class="form-group">
             <label for="first_name">ID</label>
             <input type="text" name="id" readonly id="id" value="<?php echo $data['id'] ?>" class="form-control" placeholder="" aria-describedby="helpId">
